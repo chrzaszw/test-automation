@@ -45,7 +45,7 @@ public class TestCase001 {
 
 	@Test(priority = 3)
 	public void step3_populateEnterWehicleData() {
-		EnterWehicleDataTruck wehicleDataTruck = new EnterWehicleDataTruck(driver);
+		EnterWehicleData wehicleDataTruck = new EnterWehicleData(driver);
 		Wait.waitForElement(driver, "make");
 		wehicleDataTruck.selectValueFromMakeList("Mercedes Benz");
 		wehicleDataTruck.enterEnginePerformance("200");
