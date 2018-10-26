@@ -1,0 +1,8 @@
+System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\wchrzaszcz\\Desktop\\selenium files\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		
+		
+		System.setProperty("webdriver.ie.driver",
+				"C:\\Users\\wchrzaszcz\\Desktop\\selenium files\\IEDriverServer_x64_3.14.0\\IEDriverServer.exe");
+		driver = new InternetExplorerDriver();

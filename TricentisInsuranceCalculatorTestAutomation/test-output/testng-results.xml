@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17779" started-at="2018-10-25T11:24:31Z" finished-at="2018-10-25T11:24:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17779" started-at="2018-10-25T11:24:31Z" finished-at="2018-10-25T11:24:48Z">
+      <class name="testCases.TestCase001">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.TestCase001@14acaea5]" name="setUp" is-config="true" duration-ms="5007" started-at="2018-10-25T11:24:31Z" finished-at="2018-10-25T11:24:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="step1_OpenInsuranceCalculatorApp()[pri:1, instance:testCases.TestCase001@14acaea5]" name="step1_OpenInsuranceCalculatorApp" duration-ms="2536" started-at="2018-10-25T11:24:36Z" finished-at="2018-10-25T11:24:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step1_OpenInsuranceCalculatorApp -->
+        <test-method status="PASS" signature="step2_clickOnTruckOption()[pri:2, instance:testCases.TestCase001@14acaea5]" name="step2_clickOnTruckOption" duration-ms="2174" started-at="2018-10-25T11:24:38Z" finished-at="2018-10-25T11:24:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step2_clickOnTruckOption -->
+        <test-method status="PASS" signature="step3_populateEnterWehicleData()[pri:3, instance:testCases.TestCase001@14acaea5]" name="step3_populateEnterWehicleData" duration-ms="2500" started-at="2018-10-25T11:24:40Z" finished-at="2018-10-25T11:24:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step3_populateEnterWehicleData -->
+        <test-method status="PASS" signature="step4_populateInsurantData()[pri:4, instance:testCases.TestCase001@14acaea5]" name="step4_populateInsurantData" duration-ms="1680" started-at="2018-10-25T11:24:43Z" finished-at="2018-10-25T11:24:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step4_populateInsurantData -->
+        <test-method status="PASS" signature="step5_enterProductData()[pri:5, instance:testCases.TestCase001@14acaea5]" name="step5_enterProductData" duration-ms="955" started-at="2018-10-25T11:24:45Z" finished-at="2018-10-25T11:24:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step5_enterProductData -->
+        <test-method status="PASS" signature="step6_selectPriceOption()[pri:6, instance:testCases.TestCase001@14acaea5]" name="step6_selectPriceOption" duration-ms="1079" started-at="2018-10-25T11:24:45Z" finished-at="2018-10-25T11:24:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step6_selectPriceOption -->
+        <test-method status="PASS" signature="step7_SendQuotes()[pri:7, instance:testCases.TestCase001@14acaea5]" name="step7_SendQuotes" duration-ms="1796" started-at="2018-10-25T11:24:47Z" finished-at="2018-10-25T11:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step7_SendQuotes -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:testCases.TestCase001@14acaea5]" name="browserClose" is-config="true" duration-ms="0" started-at="2018-10-25T11:24:48Z" finished-at="2018-10-25T11:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testCases.TestCase001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
