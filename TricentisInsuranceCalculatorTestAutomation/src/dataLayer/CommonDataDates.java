@@ -1,5 +1,6 @@
 package dataLayer;
 
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -26,4 +27,12 @@ public class CommonDataDates {
     public static int randBetween(int start, int end) {
         return start + (int)Math.round(Math.random() * (end - start));
     } 
+    
+	public static String insuranceStartDate() {
+		//this method will generate future date current date + two months as insurance Start Date
+		LocalDate today = LocalDate.now();
+		today = today.plusMonths(2);
+		String data = today.getMonthValue() + "/" + today.getDayOfMonth() + "/" + today.getYear();
+		return data;
+	}
 }
