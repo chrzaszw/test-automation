@@ -3,16 +3,17 @@
  Author: Wojciech Chrzaszcz
  * 
  */
-/* package testCases;
+/*package testCases;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import dataLayer.CommonDataLists;
 import pages.*;
 import supportingSolutions.*;
-import testData.*;
 
 public class TestCase001_copy {
 
@@ -46,27 +47,22 @@ public class TestCase001_copy {
 
 	@Test(priority = 3)
 	public void populateEnterWehicleData() {
-		EnterWehicleDataTruck wehicleDataTruck = new EnterWehicleDataTruck(driver);
+		EnterWehicleData wehicleDataTruck = new EnterWehicleData(driver);
 		Wait.waitForElement(driver, "make");
-		wehicleDataTruck.selectValueFromMakeList(EnterWehicleDataStepTestData.selectMakeValue());
+		wehicleDataTruck.selectValueFromMakeList(CommonDataLists.selectVehicleProducent());
 		wehicleDataTruck.enterEnginePerformance("2001");
 		Assert.assertEquals(driver.findElementByXPath("//*[@id=\"insurance-form\"]/div/section[1]/div[2]/span").getText(),
 				"Must be a number between 1 and 2000") ;
-		wehicleDataTruck.enterManufacturingDate(GenerateRandomDateOfManufacturing.randomDateOfManufacturing());
-		wehicleDataTruck.selectNumberOfSeats("3");
-		wehicleDataTruck.selectFuelType("Diesel");
-		wehicleDataTruck.enterPayload("1000");
-		wehicleDataTruck.enterWeight("2300");
-		wehicleDataTruck.enterPrice("90000");
-		wehicleDataTruck.enterLicencsePlateNumber("AB007");
-		wehicleDataTruck.enterAnualMileage("24000");
-		wehicleDataTruck.clickOnNextButton();
+		wehicleDataTruck.enterEnginePerformance("2000");
+		Assert.assertEquals(driver.findElementByXPath("//*[@id=\"insurance-form\"]/div/section[1]/div[2]/span").getText(),
+				"Must be a number between 1 and 2000") ;
+		
 	}
 
 	@AfterTest
 
 	public void browserClose() {
-		driver.quit();
+	//	driver.quit();
 	}
-
-} */
+*/
+} 

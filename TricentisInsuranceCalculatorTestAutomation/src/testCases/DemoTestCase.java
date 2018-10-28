@@ -1,21 +1,20 @@
 /*
- The goal of this test is to verify if user is able to order insurance for Truck
+ The goal of this test is to verify if user is able to order insurance for Truck using specific data
  Author: Wojciech Chrzaszcz
 
  */
 package testCases;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import dataLayer.CommonDataDates;
 import pages.*;
 import supportingSolutions.*;
-import testData.*;
 
-public class TestCase001 {
+public class DemoTestCase {
 
 	ChromeDriver driver;
 
@@ -80,7 +79,7 @@ public class TestCase001 {
 	public void step5_enterProductData() {
 		EnterProductData enterProductData = new EnterProductData(driver);
 		Wait.waitForElement(driver, "startdate");
-		enterProductData.enterStartDate(InsuranceStartDate.insuranceStartDate());
+		enterProductData.enterStartDate(CommonDataDates.insuranceStartDate());
 		enterProductData.selectInsuranceSum("7000000");
 		enterProductData.selectInsuranceDamage("Full Coverage");
 		enterProductData.clickOnProductEuroProtection();
@@ -105,17 +104,17 @@ public class TestCase001 {
 		sendQuotes.enterEmail("abc@abc.com");
 		sendQuotes.enterPhone("789000090");
 		sendQuotes.enterUsername("testuser");
-		sendQuotes.enterPassword("Passw0rd");
-		sendQuotes.confirmPassword("Passw0rd");
+		sendQuotes.enterPassword("DummyPassw0rd");
+		sendQuotes.confirmPassword("DummyPassw0rd");
 		sendQuotes.enterComment("test comment");
-	//	sendQuotes.clickOnNextButton();
+		sendQuotes.clickOnNextButton();
 
 	}
 
 	@AfterTest
 
 	public void browserClose() {
-		 driver.quit();
+		driver.quit();
 	}
 
 }

@@ -10,6 +10,7 @@ public class EnterWehicleData {
 	By pageTitle = By.id("entervehicledata");
 	By makeList = By.id("make");
 	By enginePerformance = By.id("engineperformance");
+	By enginePerformanceInvalidValueErrorMessage = By.xpath("//*[@id=\"insurance-form\"]/div/section[1]/div[2]/span");
 	By dateOfmManufacture = By.id("dateofmanufacture");
 	By motorcycleModel = By.id("model");
 	By motorcycleCylinderCapacity = By.id("cylindercapacity");

@@ -27,4 +27,16 @@ public class CommonDataTextFields {
 		String annualMileage = Integer.toString(value);
 		return annualMileage;
 	}
+	public static String payloadValue() {
+		int value = RandomNumber.myRandomInt(1000) +1;
+		String payloadValue = Integer.toString(value);
+		return payloadValue;
+	}
+	public static String weightValue() {
+		int value = RandomNumber.myRandomInt(49900) +100;
+		String weightValue = Integer.toString(value);
+		return weightValue;
+	}
+	
+	
 }
